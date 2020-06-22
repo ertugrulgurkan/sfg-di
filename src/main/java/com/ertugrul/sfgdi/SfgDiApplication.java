@@ -1,9 +1,6 @@
 package com.ertugrul.sfgdi;
 
-import com.ertugrul.sfgdi.controllers.ConstructorInjectedController;
-import com.ertugrul.sfgdi.controllers.MyController;
-import com.ertugrul.sfgdi.controllers.PropertyInjectedController;
-import com.ertugrul.sfgdi.controllers.SetterInjectedController;
+import com.ertugrul.sfgdi.controllers.*;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
@@ -13,6 +10,13 @@ public class SfgDiApplication {
 
 	public static void main(String[] args) {
 		ApplicationContext ctx = SpringApplication.run(SfgDiApplication.class, args);
+
+
+		I18nController i18nController = (I18nController) ctx.getBean("i18nController");
+
+		System.out.println("----- i18n");
+
+		System.out.println(i18nController.SayGreeting());
 
 		MyController myController = (MyController) ctx.getBean("myController");
 
