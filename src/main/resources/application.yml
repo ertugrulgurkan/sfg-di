@@ -1,4 +1,12 @@
 com:
-  username: Ertugrul
-  password: passw
-  dburl: google.com
+  jms:
+    username: JMS Username
+    password: somepass
+    url: SomeUrl
+
+---
+spring:
+  profiles: de
+com:
+  jms:
+    username: JMS Username $$$$$$ German
