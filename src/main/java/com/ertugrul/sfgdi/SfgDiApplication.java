@@ -2,6 +2,7 @@ package com.ertugrul.sfgdi;
 
 import com.ertugrul.sfgdi.controllers.*;
 import com.ertugrul.sfgdi.examplebeans.FakeDataSource;
+import com.ertugrul.sfgdi.examplebeans.FakeJmsBroker;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
@@ -23,6 +24,9 @@ public class SfgDiApplication {
 		FakeDataSource fakeDataSource = (FakeDataSource) ctx.getBean(FakeDataSource.class);
 
 		System.out.println(fakeDataSource.getUser());
+
+		FakeJmsBroker fakeJmsBroker = (FakeJmsBroker) ctx.getBean(FakeJmsBroker.class);
+		System.out.println(fakeJmsBroker.getUsername());
 
 	}
 
