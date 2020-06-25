@@ -1,0 +1,31 @@
+ # comment line
+name : Ertugrul
+
+names:
+    - Ertugrul
+    - Eray
+    - Betül
+    - Arda
+pound_sign: "#"
+
+book:
+    author: Jack London
+    name: White Fang
+    publisher: Simple House
+
+truth: yes #Yes, true, TRUE
+
+another_truth: no #No, false, FALSE
+
+string_val: "This is a string sentence."
+
+colon_string: "my coureses: one two three"
+
+include_new_lines: |
+  asdf asdf asdf
+  asdf adfewf asdf
+  asdf ae adfre
+ignore_new_lines: >
+  this is
+  just one long
+  string
